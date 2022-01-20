@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:waste_management_pages/router_page.dart';
+import 'package:waste_management_pages/pages/router_page.dart';
 
 import 'package:waste_management_pages/routing.dart';
 

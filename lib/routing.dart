@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:waste_management_pages/home_page.dart';
-import 'package:waste_management_pages/login_page.dart';
-import 'package:waste_management_pages/report_page.dart';
-import 'package:waste_management_pages/router_page.dart';
+import 'package:waste_management_pages/pages/home_page.dart';
+import 'package:waste_management_pages/pages/login_page.dart';
+import 'package:waste_management_pages/pages/report_page.dart';
+import 'package:waste_management_pages/pages/router_page.dart';
 
 class Routing {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -14,14 +14,14 @@ class Routing {
 
       case reportScreenRoute:
         return MaterialPageRoute(builder: (_) => BugReport());
-        case loginScreenRoute:
+      case loginScreenRoute:
         return MaterialPageRoute(builder: (_) => LoginPage());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
             appBar: AppBar(),
             body: Center(
-              child: Text('Ters giden birşeyler oldu'),
+              child: Text('Something went wrong!'),
             ),
           ),
         );

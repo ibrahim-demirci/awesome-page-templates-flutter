@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'FadeAnimation.dart';
-
-
+import '../FadeAnimation.dart';
 
 class BugReport extends StatefulWidget {
   @override
@@ -19,7 +17,7 @@ class _BugReportState extends State<BugReport> {
         title: Center(child: Text("Report")),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left :15.0,right :15.0, top: 70),
+        padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 70),
         child: Column(
           children: <Widget>[
             FadeAnimation(
@@ -41,28 +39,24 @@ class _BugReportState extends State<BugReport> {
                         padding: EdgeInsets.all(8.0),
                         decoration: BoxDecoration(
                             border: Border(
-                                bottom: BorderSide(
-                                    color: Colors.grey[100]))),
+                                bottom: BorderSide(color: Colors.grey[100]))),
                         child: TextField(
                           decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: "Title",
-                              hintStyle:
-                              TextStyle(color: Colors.grey[400])),
+                              hintStyle: TextStyle(color: Colors.grey[400])),
                         ),
                       ),
                       Container(
                         padding: EdgeInsets.all(8.0),
                         child: TextField(
-
                           keyboardType: TextInputType.multiline,
                           maxLines: 10,
                           decoration: InputDecoration(
                               hintMaxLines: 5,
                               border: InputBorder.none,
                               hintText: "Details",
-                              hintStyle:
-                              TextStyle(color: Colors.grey[400])),
+                              hintStyle: TextStyle(color: Colors.grey[400])),
                         ),
                       )
                     ],
@@ -85,15 +79,13 @@ class _BugReportState extends State<BugReport> {
                     child: Text(
                       "Send",
                       style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                          color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                   ),
                 )),
             SizedBox(
               height: 70,
             ),
-
           ],
         ),
       ),
